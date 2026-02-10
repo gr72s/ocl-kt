@@ -72,8 +72,8 @@ tasks.generateGrammarSource<AntlrTask> {
         copy {
             from(outputDirectory)
             into(targetSourceDir)
-            include("**/Lexical.tokens")
-            include("**/Lexical.interp")
+            include("**/*.tokens")
+            include("**/*.interp")
         }
     }
 }
