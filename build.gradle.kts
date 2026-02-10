@@ -65,8 +65,9 @@ tasks.generateGrammarSource<AntlrTask> {
     val pkg = "com.gr72s"
     val targetSourceDir = file("src/main/antlr/.antlr")
     with(arguments) {
-        addAll(listOf("-package", pkg,"-no-listener"))
+        addAll(listOf("-package", pkg, "-visitor","-no-listener"))
     }
+    outputDirectory = outputDirectory.resolve(pkg.split(".").joinToString("/"))
 
     doLast {
         copy {
