@@ -1,0 +1,7 @@
+[versions]
+antlr = "4.13.1"
+
+[libraries]
+antlr4 = { module = "org.antlr:antlr4", version.ref = "antlr" }
+antlr4-runtime = { module = "org.antlr:antlr4-runtime", version.ref = "antlr" }
+
